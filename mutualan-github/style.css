@@ -1,45 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #fdeeee;
-  text-align: center;
+    background: #e6f2ff; /* biru cerah */
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
-  color: #c0392b;
+    color: #0a2e6e; /* biru tua cerah */
+    margin-bottom: 30px;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 51, 102, 0.15);
 }
 
 .card img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 3px solid #c0392b;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #1e90ff; /* biru cerah */
+    object-fit: cover;
 }
 
 .username {
-  font-weight: bold;
-  margin-top: 10px;
-  color: #c0392b;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0a2e6e; /* biru tua */
 }
 
-button {
-  margin-top: 10px;
-  padding: 6px 12px;
-  border-radius: 20px;
-  border: 2px solid #c0392b;
-  background: transparent;
-  color: #c0392b;
+.name {
+    font-size: 14px;
+    color: #2456a6; /* biru sedang */
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 2px solid #1e90ff;
+    border-radius: 20px;
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.card a:hover {
+    background: #1e90ff;
+    color: #ffffff;
 }
