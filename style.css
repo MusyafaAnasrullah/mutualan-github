@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e6f2ff; /* biru cerah */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0a2e6e; /* biru tua cerah */
+    margin-bottom: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 51, 102, 0.15);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #1e90ff; /* biru cerah */
+    object-fit: cover;
+}
+
+.username {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0a2e6e; /* biru tua */
+}
+
+.name {
+    font-size: 14px;
+    color: #2456a6; /* biru sedang */
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 2px solid #1e90ff;
+    border-radius: 20px;
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.card a:hover {
+    background: #1e90ff;
+    color: #ffffff;
+}
